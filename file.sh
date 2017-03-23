@@ -12,10 +12,7 @@ while read -r SUPERHERO; do
  while read -r SUPERHERO; do
  	  echo "Superhero Name: $SUPERHERO"
    done <&5
-#  echo "File Was Read On: `date`" >&1
+  echo "File Was Read On: `date`" >> $FILE
    
   exec 5>&-
 
-m
-n
-echo done
