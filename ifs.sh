@@ -8,7 +8,11 @@ echo "Enter the Delimiter: "
 read DELIM
 
 IFS="$DELIM"
-
+read -r CPU MEMORY DISK<"$FILE";
+echo $?
+echo "CPU: $CPU"
+  echo "Memory: $MEMORY"
+  echo "Disk: $DISK"
 while read -r CPU MEMORY DISK; do
   echo "CPU: $CPU"
   echo "Memory: $MEMORY"
