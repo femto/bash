@@ -1,4 +1,4 @@
-#!/usr/bin/env awk -f
+#!/usr/bin/awk -f
 #!/bin/awk -f
 {
 	$1="";

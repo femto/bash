@@ -1,6 +1,13 @@
 #!/usr/bin/env awk -f
-{
-	#print $2
-	FS=":"
-	print $2
+BEGIN {
+	f="";
+
+    	username[0][0]=0;
+
+}
+{	for (i in username) {
+		print i, username[i];
+
+	}
+	#print;
 }
