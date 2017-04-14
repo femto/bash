@@ -67,6 +67,7 @@ END {
 # numeric sort - biggest numbers first
 # sort fields 0 and 1 first (sort starts with 0)
 # followed by dictionary sort on fields 2 + 3
+sort +0nr -2 +2d | \
 # add header
 (echo "size count user group";cat -) |\
 # convert space to tab - makes it nice output
